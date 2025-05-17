@@ -1,88 +1,113 @@
-body{
-    font-family: "Space Grotesk";
-    width: 80vw;
-    margin: 0 auto;
-    background-color: #111111;
-    color: white
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+body {
+  background-color: #1e1e1e;
+  font-family: "Space Grotesk";
+  color: white;
 }
 
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h1 {
+  font-size: 62px;
 }
 
-
-.nav{
-    display: flex;
-    gap: 40px;
+.hero-section {
+  width: 80vw;
+  margin: 0 auto;
 }
 
-ul{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    align-items: center;
+.logoMain {
+  height: 34px;
 }
 
-
-.active{
-    color: white;
-}
-.inactive{
-    color: #9a9a9a;
-}
-
-.delight-img{
-    height: 50px;
+.main {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1{
-    font-size: 60px;
+ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
 }
 
-.hero{
-    margin-top: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 500px;
+.cta-link {
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 10px;
+  color: #1e1e1e;
+  font-weight: 500;
 }
 
-span{
-    color: #9a9a9a;
+.active {
+  color: #9a9a9a;
 }
 
-.tech-stack{
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: white;
-    color: #111111;
-    height: 500px;
-    padding: 100px;
+.heroItems {
+  margin-top: 60px;
 }
 
-.content{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.heroSmText {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 80%;
 }
 
-.tech-icons{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+.heroItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.hero-image {
+  height: 600px;
+}
+.itemsRight {
+  display: flex;
+  gap: 80px;
+}
+
+button {
+  margin-top: 20px;
+  /* padding: 5px 25px; */
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  inset: none;
+  height: 64px;
+  width: 184px;
+  margin-right: 10px;
+}
+.secondary {
+  margin-top: 20px;
+  /* padding: 5px 25px; */
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  inset: none;
+  height: 64px;
+  width: 184px;
+  background: none;
+  color: #fff;
+  border: 2px solid white;
+}
+
+i {
+  font-weight: 600;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.TechnologyStacks {
+  background-color: #f6f6f6;
+}
