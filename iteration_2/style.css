@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111111;
+    color: white;
+    font-family: "Space Grotesk";
+}
+
+button{
+    cursor: pointer;
+}
+
+#container{
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.active{
+    color: white;
+}
+
+
+
+/* menu styling */
+.logo{
+    width: 300px;
+}
+
+.menu{
+    width: 80vw;
+    margin: 0 auto;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2vw;
+    margin-left: 20vw;
+    font-weight: 400px;
+}
+
+.menu button{
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight:bold;
+    padding: 10px;
+}
+
+/* hero section styling */
+
+.hero{
+    width: 80vw;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.hero .content{
+    font-size: 30px;
+}
+
+.hero .content span{
+    color: #9a9a9a;
+}
+
+
+.hero .content p {
+    font-size: 20px;
+}
+
+.hero button{
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.download{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.hire:hover{
+    background-color: #fafafaae;
+}
+
+.download:hover{
+    color: black;
+    background-color: rgb(48, 48, 48);
+    border: none;
+}
+
+
+
+/* info section styling */
+
+.tech{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    position: relative;
+}
+
+.section-header{
+    color: #242424;
+    text-align: center;
+   margin: 60px 0;
+   font-weight: 400;
+   letter-spacing: 20px;
+   font-size: 32px;
+   
+}
+
+.section-header::after{
+    content: "";
+    width: 15%;
+    background: #222222;
+    height: 2px;
+    position: absolute;
+    top:180px;
+    right: 50%;
+    transform:translate(50%,50px)
+}
+
+.tech .content{
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+
+
+.tech .content p{
+    width:80%;
+    /* height: 100%; */
+}
+
+
+.icon img{
+    height: 30px;
+}
+
+/* .icons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+} */
+
+
+.icon-row-1, .icon-row-2{
+    display: flex;
+    padding: 10px 0;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.icons .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.project{
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.project .content{
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.project .section-header{
+    color: white;
+
+}
+
+.project .section-header::after{
+    content: "";
+    width: 15%;
+    background: white;
+    height: 2px;
+    position: absolute;
+    top: 70px;
+    right: 50%;
+    transform:translate(50%,50px)
+}
+
+.project-1,.project-2,.project-3,.project-4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.explanation .buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.explanation button{
+    font-size: 10px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.explanation .github{
+    height: 10px;
+}
+
+.explanation .project{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+@media(max-width:600px){
+    .container{
+        width: inherit;
+        margin: inherit;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
